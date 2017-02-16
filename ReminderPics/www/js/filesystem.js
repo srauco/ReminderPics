@@ -104,14 +104,10 @@ function gatherPictures() {
 }
 
 function openPicture(objPicture) {
-
-  alert(objPicture)
-
-
-  fileOpener.open("file:///" + objPicture)
-
-
-  alert("done");
+  cordova.plugins.fileOpener2.open(
+    '/sdcard' + objPicture,
+    'image/jpeg'
+  );
 }
 
 String.prototype.replaceAll = function (search, replacement) {

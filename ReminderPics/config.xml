@@ -112,4 +112,5 @@
   <plugin name="cordova-plugin-camera" version="2.3.1" />
   <preference name="Fullscreen" value="False" />
   <plugin name="cordova-plugin-file" version="4.3.1" />
+  <plugin name="cordova-plugin-file-opener2" version="2.0.7" src="https://github.com/pwlin/cordova-plugin-file-opener2.git" />
 </widget>

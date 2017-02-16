@@ -3,14 +3,13 @@
 var isAndroid = Framework7.prototype.device.android === true;
 var $$ = Dom7;
 
-var intSaveDays;							// Number of days to keep on file before deletion
-var strLastDate;							// Last available folder based on today and intSaveDays
-var strCurrentDate;
-// Currently selected date. App start = today
+var intSaveDays;							          // Number of days to keep on file before deletion
+var strLastDate;							          // Last available folder based on today and intSaveDays
+var strCurrentDate;                     // Currently selected date. App start = today
 var strRootFolder = "ReminderPics"			// Base picture folder name
-var strMainColor;							// Base color of scheme
-var pictureSource;   						// picture source
-var destinationType; 						// sets the format of returned value
+var strMainColor;							          // Base color of scheme
+var pictureSource;   					        	// picture source
+var destinationType; 				        		// sets the format of returned value
 
 // Wait for device API libraries to load
 //
