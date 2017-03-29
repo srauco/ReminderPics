@@ -1,12 +1,17 @@
 
 function setCameraSettings(){
-  pictureSource = navigator.camera.PictureSourceType;
+  alert("setCameraSettings")
+  //pictureSource = navigator.camera.PictureSourceType;
+  alert(2)
   destinationType = 1 //navigator.camera.DestinationType;
-	saveToPhotoAlbum = false;
+  alert(3)
+  saveToPhotoAlbum = false;
+	alert("setCameraSettings done")
 }
 
 function getSaveDays(intDays){
-	if(intDays == null){
+  alert("getSaveDays")
+  if (intDays == null) {
 		intSaveDays = localStorage.getItem("SaveDays");
 		if (intSaveDays == null){
 			localStorage.setItem("SaveDays", 3);

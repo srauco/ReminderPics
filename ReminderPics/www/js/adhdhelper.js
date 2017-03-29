@@ -11,25 +11,49 @@ var strMainColor;							          // Base color of scheme
 var pictureSource;   					        	// picture source
 var destinationType; 				        		// sets the format of returned value
 
+//var strWriteExternal = Manifest.permission.WRITE_EXTERNAL_STORAGE;
+
 // Wait for device API libraries to load
 //
 document.addEventListener("deviceready",onDeviceReady,false);
 // device APIs are available
 //
 
+
+
+
 function onDeviceReady() {
-  //startup();
-	setCameraSettings();								// Set up camera basics
-	getSaveDays();										// Load number of days to save into intSaveDays
-	getLastDate();										// Sets strLastDate to last available folder date
-	strCurrentDate = getFolderDate();					// Gets today's date on startup
-	createFolder(""); 									// Create base folder if it doesn't exist
-	divCurrentSelectedDate.innerHTML = strCurrentDate; 	// Set date on header();
-	createPastDayFolders()
-	gatherPictures();									// Gets today's pictures, if any
-	cleanOldFolders();									// Deletes folders older than intSaveDays
-  initAd();
-  showBannerFunc();
+  alert(1)
+/*
+  cordova.plugins.diagnostic.getCameraAuthorizationStatus(function (status) {
+    if (status === cordova.plugins.diagnostic.permissionStatus.GRANTED) {
+      alert("Camera use is authorized");
+    }
+  }, function (error) {
+    alert("The following error occurred: " + error);
+  });
+*/
+  
+//  cordova.plugins.diagnostic.requestCameraAuthorization(function (available) { alert("s") }, function () { alert("f") });
+
+
+  //    startup();
+
+      setCameraSettings();								// Set up camera basics
+      getSaveDays();										// Load number of days to save into intSaveDays
+      getLastDate();										// Sets strLastDate to last available folder date
+      strCurrentDate = getFolderDate();					// Gets today's date on startup
+      createFolder(""); 									// Create base folder if it doesn't exist
+      divCurrentSelectedDate.innerHTML = strCurrentDate; 	// Set date on header();
+      createPastDayFolders()
+      gatherPictures();									// Gets today's pictures, if any
+      cleanOldFolders();									// Deletes folders older than intSaveDays
+      initAd();
+      showBannerFunc();
+
+
+
+
 
   //	getColors();
 //	setColors();
